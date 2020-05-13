@@ -3,6 +3,10 @@ import Styled from 'styled-components';
 
 const NavbarContainer = Styled.div `
     width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid white;
 `;
 
 const List = Styled.ul `
@@ -11,13 +15,19 @@ const List = Styled.ul `
     color: white;
     padding: 10px 5px;
     list-style: none;
-    border-bottom: 1px solid white;
+    
 `;
 
 const ListItem = Styled.li `
     text-transform: uppercase;
     font-weight: bolder;
     letter-spacing: 2px;
+    cursor: pointer;
+    padding: 3px;
+    &:hover {
+        border-left: 2px solid white;
+        border-top: 1px solid white;
+    }
 `;
 
 const Navbar = () => {
