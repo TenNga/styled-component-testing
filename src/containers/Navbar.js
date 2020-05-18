@@ -34,7 +34,6 @@ const Navbar = () => {
     return(
         <NavbarContainer>
             <List>
-                <ListItem>About</ListItem>
                 <ListItem>Projects</ListItem>
                 <ListItem>Resume</ListItem>
                 <ListItem>Contact</ListItem>

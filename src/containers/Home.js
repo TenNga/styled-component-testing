@@ -3,9 +3,10 @@ import Styled from 'styled-components';
 
 const HomeContainer = Styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     color: white;
-    padding-top: 10rem;
+    padding-top: 2rem;
 `;
 
 const HomeHeading = Styled.h1`
@@ -17,10 +18,10 @@ const HomeHeading = Styled.h1`
 const HomeSubHeading = Styled.h3`
     font-style: italic;
     font-weight: lighter;
+    align-text: center;
 `;
 const Text = Styled.div`
     margin: 10px;
-    width: 50%;
 `;
 
 const Home = () => {
