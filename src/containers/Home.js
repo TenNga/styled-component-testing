@@ -27,11 +27,14 @@ const HomeSubHeading = Styled.h3`
     left: -100px;
 `;
 const SubHeadingText = Styled.div`
+    border-radius: 10px;
+    background: #404040;
+    box-shadow: inset 8px 8px 16px #363636, 
+                inset -8px -8px 16px #4a4a4a;
     width: 300px;
     text-align: left;
     position: relative;
     right: -360px;
-    background-color: black;
     padding: 30px;
 `;
 const Text = Styled.div`
@@ -42,6 +45,9 @@ const IndexImg = Styled.div `
     position: relative;
     top: 0;
     left: -100px;
+    > img {
+        border-radius: 10px;
+    }
 `;
 
 const Home = () => {
