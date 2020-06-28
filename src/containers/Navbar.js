@@ -3,9 +3,10 @@ import Styled from 'styled-components';
 
 const NavbarContainer = Styled.div `
     width: 100vw;
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;
+    padding: 0.8rem;
     border-bottom: 1px solid white;
 `;
 
@@ -19,15 +20,14 @@ const List = Styled.ul `
 `;
 
 const ListItem = Styled.li `
+    border-radius: 50px;
+    background: #404040;
+    box-shadow: inset 8px 8px 16px #363636, 
+            inset -8px -8px 16px #4a4a4a;
     text-transform: uppercase;
-    font-weight: bolder;
     letter-spacing: 2px;
     cursor: pointer;
-    padding: 3px;
-    &:hover {
-        border-left: 2px solid white;
-        border-top: 1px solid white;
-    }
+    padding: 1rem;
 `;
 
 const Navbar = () => {

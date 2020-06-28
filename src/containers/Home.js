@@ -1,27 +1,47 @@
 import React from 'react';
 import Styled from 'styled-components';
+import styled from 'styled-components';
 
 const HomeContainer = Styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     color: white;
-    padding-top: 2rem;
+    padding: 1rem;
 `;
 
 const HomeHeading = Styled.h1`
+    position: relative;
+    top:0;
+    right: -258px;
     font-weight: bolder;
     text-align: center;
-    font-size: 6rem;
+    font-size: 7rem;
+    z-index: 2;
 `;
 
 const HomeSubHeading = Styled.h3`
     font-style: italic;
     font-weight: lighter;
-    align-text: center;
+    position: relative;
+    left: -100px;
+`;
+const SubHeadingText = Styled.div`
+    width: 300px;
+    text-align: left;
+    position: relative;
+    right: -360px;
+    background-color: black;
+    padding: 30px;
 `;
 const Text = Styled.div`
     margin: 10px;
+`;
+
+const IndexImg = Styled.div `
+    position: relative;
+    top: 0;
+    left: -100px;
 `;
 
 const Home = () => {
@@ -29,9 +49,15 @@ const Home = () => {
         <HomeContainer>
             <Text>
                 <HomeHeading>Kevin Karma</HomeHeading>
-                <HomeSubHeading>Front-End Developer experience in building eye catching desing</HomeSubHeading>
+                  <SubHeadingText>
+                      <HomeSubHeading>
+                        Front-End Developer experience in building eye catching desing
+                        </HomeSubHeading>
+                </SubHeadingText>
             </Text>
+            <IndexImg>
             <img src="https://avatars2.githubusercontent.com/u/18019562?s=400&u=8597640c2a45d3f73cd158a18e3411e68d1f11d5&v=4" />
+            </IndexImg>
         </HomeContainer>
     )
 }
